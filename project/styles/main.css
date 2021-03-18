@@ -1,7 +1,7 @@
 html {
 	font-family: 'Open Sans', sans-serif;
 }
-body {
+.center {
 	margin: 0 auto;
 }
 header {
@@ -14,7 +14,6 @@ header .img-arrow {
 }
 .img-logo {
 	grid-area: logo;
-	flex-wrap: wrap;
 }
 nav {
 	grid-area: nav;
@@ -29,11 +28,11 @@ nav .sw {
 }
 nav .tw {
 	grid-area: tw;
-	margin-left: 87px;
+	
 }
 nav .fow {
 	grid-area: fow;
-	margin-left: 150px;
+	
 }
 .main {
 	padding-top: 100px;
@@ -101,8 +100,6 @@ a {
 	text-decoration: none;
 }
 header .blur {
-	min-width: 300px;
-	max-width: 1920px;
 	background: rgba(0, 0, 0, 0.85);
 	backdrop-filter: blur(4px);
 }
@@ -155,7 +152,6 @@ header .blur {
 	color: #fff;
 }
 .main .third .blur {
-	min-width: 300px;
 	max-width: 1920px;
 	background: rgba(0, 0, 0, 0.85);
 	backdrop-filter: blur(4px);
@@ -201,38 +197,33 @@ footer .last .span:last-child {
 	grid-area: tg;
 }
 @media screen and (min-width: 781px) and (max-width: 1920px) {
+	.center {
+		max-width: 1112px;
+	}
 	header {
 		width: 1920px;
 		min-height: 957px;
-		box-sizing: border-box;
-		flex-wrap: wrap;
 	}
 	header .blur {
+		width: 1920px;
 		height: 957px;
-		padding-left: 405px;
 	}
 	header nav {
 		display: grid;
 		box-sizing: border-box;
-		grid-template-columns: 57px 120px 100px 72px;
+		grid-template-columns: 27% 26% 29% auto;
 		grid-template-rows: 15px;
 		grid-template-areas: "fw sw tw fow";
-		margin-left: 485px;
-	}
-	header nav .sw {
-		margin-left: 78px;
 	}
 	header .first-head__container {
 		padding-top: 38px;
-		width: 1008px;
-		flex-wrap: wrap;
 		display: grid;
-		grid-template-columns: 125px auto;
+		grid-template-columns: 55% 45%;
 		grid-template-rows: 33px;
 		grid-template-areas: "logo nav";
 	}
 	hr {
-		width: 1817px;
+		width: 159.93%;
 		border: 1px solid rgba(255, 255, 255, 0.3);
 		margin-left: -353px;
 		margin-top: 20px;
@@ -241,7 +232,7 @@ footer .last .span:last-child {
 		margin-top: 258px;
 	}
 	.second-head__container .bt1 {
-		width: 216px;
+		max-width: 216px;
 		height: 59px;
 		font-size: 14px;
 		line-height: 16px;
@@ -252,7 +243,7 @@ footer .last .span:last-child {
 		line-height: 25px;
 	}
 	.img-procode {
-		width: 290px;
+		max-width: 290px;
 		height: 185px;
 		position: absolute;
 		left: 614px;
@@ -266,7 +257,7 @@ footer .last .span:last-child {
 		top: 845px;
 	}
 	.main {
-		max-width: 1920px;
+		width: 1920px;
 		background-color: #fff;
 	}
 	.main .small-t {
@@ -276,15 +267,14 @@ footer .last .span:last-child {
 		margin-top: -20px;
 	}
 	.main .first {
-		width: 1515px;
-		padding-left: 405px;
+		width: 1920px;
 		background-color: #fff;
 
 	}
 	.main .first nav {
 		margin-top: 97px;
 		display: grid;
-		grid-template-columns:  382px 382px 382px ;
+		grid-template-columns:  34.4% 34.4% auto ;
 		grid-template-rows: 326px 292px;
 		grid-template-areas: "project  design develop"
 							 "api     mob       supp"
@@ -399,12 +389,11 @@ footer .last .span:last-child {
 		grid-template-areas: "mail arrow";
 	}
 	.main .second {
-		width: 1515px;
+		width: 1920px;
 		min-height: 500px;
 		padding-top: 63px;
 		padding-bottom: 20px;
 		margin-top: 135px;
-		padding-left: 403px;
 		margin-left: -403;
 	}
 	.main .second h2 {
@@ -485,7 +474,7 @@ footer .last .span:last-child {
 	}
 	.main .third .blur {
 		height: 607px;
-		padding-left: 403px;
+		
 	}
 	.main .third .blur h2 {
 		color: #fff;	
@@ -543,10 +532,9 @@ footer .last .span:last-child {
 		color: #fff;
 	}
 	.main .fourth {
-		width: 1515px;
+		width: 1920px;
 		min-height: 732px;
 		padding-top: 83px;
-		padding-left: 405px;
 	}
 	.main .fourth h2 {
 		color: #333;
@@ -671,10 +659,10 @@ footer .last .span:last-child {
 							 "ios android php7";
 	}
 	footer {
-		width: 1515px;
+		width: 1920px;
 		min-height: 430px;
 		margin-top: 0px;
-		padding-left: 405px;
+		
 		padding-top: 96px;
 	}
 	footer .bt1 {
@@ -718,8 +706,8 @@ footer .last .span:last-child {
 	}
 }
 @media screen and (min-width: 400px) and (max-width: 780px) {
-	html {
-		overflow-x: hidden
+	.center {
+		width: 648px;
 	}
 	h2 {
 		font-size: 34px;
@@ -758,22 +746,22 @@ footer .last .span:last-child {
 		margin-left: 1px;
 	}
 	header .blur {
+		width: 100%;
 		min-height: 400px;
 	}
 	header .first-head__container {
-		margin-left: 65px;
 		padding-top: 38px;
-		width: 750px;
+		width: 98%;
 		
 		display: grid;
-		grid-template-columns: 260px 550px;
+		grid-template-columns: 40% 60%;
 		grid-template-rows: 33px;
 		grid-template-areas: "logo nav";
 	}
 	header nav {
 		display: grid;
 		box-sizing: border-box;
-		grid-template-columns: 106px 100px 117px 150px;
+		grid-template-columns: 106px 100px 117px 130px;
 		grid-template-rows: 19px;
 		grid-template-areas: "fw sw tw fow"
 	}
@@ -784,7 +772,6 @@ footer .last .span:last-child {
 		margin-top: 20px;
 	}
 	.second-head__container {
-		margin-left: 65px;
 		margin-top: 58px;
 		padding-bottom: 30px;
 	}
@@ -795,7 +782,6 @@ footer .last .span:last-child {
 		line-height: 16px;
 		margin-top: 50px;
 		margin-bottom: 20px;
-		margin-left: 65px;
 	}
 	.second-head__container .small-t {
 		font-size: 18px;
@@ -805,7 +791,6 @@ footer .last .span:last-child {
 		width: 110px;
 		height: 0px;
 		border: 1px solid #FED233;
-		margin-left: 67px;
 		margin-top: -14px;
 		margin-bottom: 20px;
 	}
@@ -818,7 +803,6 @@ footer .last .span:last-child {
 	}
 	.main .first {
 		margin-top: -30px;
-		margin-left: 65px;
 	}
 	.main .small-t {
 		font-size: 18px;
@@ -906,7 +890,6 @@ footer .last .span:last-child {
 	.main .second {
 		max-width: 780px;
 		padding-top: 63px;
-		padding-left: 65px;
 		margin-top: 30px;
 	}
 	.main .second h2 {
@@ -988,7 +971,7 @@ footer .last .span:last-child {
 	}
 	.main .third .blur {
 		min-height: 550px;
-		padding-left: 65px;
+		
 	}
 	
 	.main .third .blur h2 {
@@ -1050,7 +1033,6 @@ footer .last .span:last-child {
 	.main .fourth {
 		max-width: 780px;
 		min-height: 732px;
-		padding-left: 65px;
 		padding-top: 90px;
 	}
 	.main .fourth h2 {
@@ -1062,7 +1044,6 @@ footer .last .span:last-child {
 		font-size: 14px;
 	}
 	.main .fourth nav {
-		margin-left: 0;
 		margin-top: 90px;
 		color: #FED233;
 		padding-bottom: 30px;
@@ -1188,7 +1169,6 @@ footer .last .span:last-child {
 		max-width: 780px;
 		min-height: 330px;
 		margin-top: 0;
-		padding-left: 67px;
 		padding-top: 96px;
 	}
 	footer h2 {
@@ -1216,7 +1196,7 @@ footer .last .span:last-child {
 	footer .img-hand {
 		position:absolute;
 		left: 574px;
-		top: 3680px;
+		top: 3730px;
 	}
 	footer .connect .number {
 		font-size: 24px;
